@@ -1,0 +1,50 @@
+.item1 { grid-area: History; }/*states the item name and the name for the grid area*/
+.item2 { grid-area: Aim; }/*states the item name and the name for the grid area*/
+.item3 { grid-area: Security; }/*states the item name and the name for the grid area*/
+.item4 { grid-area: OurStaff; }/*states the item name and the name for the grid area*/
+.item5 { grid-area: Staff1; }/*states the item name and the name for the grid area*/
+.item6 { grid-area: Photo1; }/*states the item name and the name for the grid area*/
+.item7 { grid-area: Staff2; }/*states the item name and the name for the grid area*/
+.item8 { grid-area: Photo2; }/*states the item name and the name for the grid area*/
+.item9 { grid-area: Staff3; }/*states the item name and the name for the grid area*/
+.item10 { grid-area: Photo3; }/*states the item name and the name for the grid area*/
+.item11 { grid-area: Staff4; }/*states the item name and the name for the grid area*/
+.item12 { grid-area: Photo4; }/*states the item name and the name for the grid area*/
+.item13 { grid-area: Staff5; }/*states the item name and the name for the grid area*/
+.item14 { grid-area: Photo5; }/*states the item name and the name for the grid area*/
+.item15 { grid-area: Staff6; }/*states the item name and the name for the grid area*/
+.item16 { grid-area: Photo6; }/*states the item name and the name for the grid area*/
+.item17 { grid-area: Staff7; }/*states the item name and the name for the grid area*/
+.item18 { grid-area: Photo7; }/*states the item name and the name for the grid area*/
+
+hr.short {
+  border-top: 2px solid #0088a9;
+  width:600px;
+  margin: auto;
+  
+}
+.h1 {/*this formats the look of any text under h1*/
+  font-size:40px;
+  color:black;
+  font-family:"Castellar";
+  text-align:center;
+  padding-bottom: 2px;
+  }
+
+.grid-container {/*states the name of this section*/
+display: grid;/*states that the display type is grid*/
+grid-template-areas:/*what follows is the setup of the grid template*/
+  'History History History'
+  'Aim Aim Aim'
+  'Security Security Security'
+  'OurStaff OurStaff OurStaff'
+  'Staff1 Staff1 Photo1'
+  'Staff2 Staff2 Photo2'
+  'Staff3 Staff3 Photo3'
+  'Staff4 Staff4 Photo4'
+  'Staff5 Staff5 Photo5'
+  'Staff6 Staff6 Photo6'
+  'Staff7 Staff7 Photo7';
+gap: 10px;/*there will be gap of 10px between the grid*/
+background-color: none;/*states what the background colour for the grid will be*/
+padding: 10px;}/*the padding around the outside of the grid will be 10px*/

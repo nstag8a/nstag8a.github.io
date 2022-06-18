@@ -1,0 +1,71 @@
+h1 {
+    font-size:40px;
+    color:rgb(0, 0, 0);
+    font-family:"Castellar";
+    text-align:center;
+    padding-bottom: 2px;
+    }
+
+h2 {
+        font-size:17px;
+        color:black;
+        font-family:"arial";
+        text-align:center;
+        }
+
+h3 {
+          font-size:17px;
+          color:black;
+          font-family:"arial";
+          text-align:left;
+          }
+
+p {
+font-size: 15px;
+color: black;
+font-family: "arial";
+padding: 20px 0px 20px 0px;
+text-align:center;
+margin:10px;
+        }
+
+
+    hr.short {
+        border-top: 2px solid #0088a9;
+        width:600px;
+        margin: auto;
+        
+      }
+
+
+
+
+.row {
+    /* setting display to flex */
+    display: flex;
+    /* setting the flex direction to row */
+    flex-direction: row;
+    /* flex-wrap: flow to multiple lines */
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    /* sets the box size */
+    flex-basis: 100%;
+    /* remaining space/proportion will be distributed equally */
+    flex: 1
+    }
+.image{
+    margin-bottom: auto;
+
+}
+.desc{
+    margin-top: 57px;
+    margin-right: 50px;
+    margin-left: 50px;
+    /* make border */
+    border-style: double;
+    border-color:#0088a9 ;
+}    

@@ -1,0 +1,146 @@
+<!DOCTYPE html><!--an instruction to the web browser about what version of HTML the page is written in-->
+<html lang="en"><!--helps define the language of an element-->
+<head><!--marks where the header part of the code begins-->
+
+	<meta name='"viewport' content="width=device-width, initial-scale=1">
+		<!-- Link/ref to bootstrap for ui -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<!--This means all the whitespace and other extra characters have been removed. This is commonly done for use in production, to reduce the size of the file.-->
+		<!-- other link/ref to js and css -->
+		<script src="contactus.js"></script>
+		<link rel="stylesheet" href="../Header/header.css"><!--reference to the CSS used in the header java script-->
+		<link rel="stylesheet" href="../Footer/footer.css"><!--reference to the CSS used in the footer.js-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="contact.css"><!--a reference to the CSS for the contact us page content or page design-->
+		<title>Contact Us</title>
+</head>
+<body><!--marks the beginning of the body code for the HTML-->
+			<!-- Header script -->
+<script src="../Header/header.js"></script><!--calls the referenced java script for the nav bar-->
+<h1>Contact Us</h1>
+
+	<hr class="short"><!--inserts a short thematic break-->
+	<p>Our dedicated staff are available to assist you with all queries. Please contact the below  department managers for support.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="../ContactUs/images/business-man.jpg" alt="sean" height=500px width=500px">
+<h3>General Manager</h3>
+<p>Sean Andrade<br><br><p2><b>F:</b>+647 242 8321<br><b>P:</b> 0800 CHATEAU (0800 242 8328 ext 1)<br>
+<b>E:</b>Sean.Andrade@wellingchateau.co.nz<br>
+</p2></p>
+  </div>
+  
+  <div class="column">
+ <img src="../ContactUs/images/business-man.jpg" alt="ami" height=500px width=500px">
+<h3>Marketing & Sales</h3>
+<p>Amirul Azhar<p2><br><br><b>F:</b>+647 242 8322<br><b>P:</b> 0800 CHATEAU (0800 242 8328 ext 2)<br>
+<b>E:</b>Amirul.Azhar@wellingchateau.co.nz<br>
+</p2></p>
+  </div>
+  
+  <div class="column">
+    <img src="../ContactUs/images/business-man.jpg" alt="germaine" height=500px width=500px">
+    <h3>Finance & Accounting</h3>
+    <p>Germaine Matenga<p2><br><br><b>F:</b>+647 242 8323<br><b>P:</b> 0800 CHATEAU (0800 242 8328 ext 3)<br>
+<b>E:</b>Germaine.Matenga@wellingchateau.co.nz<br>
+</p2></p><!--The P element represents a paragraph-->
+</div>
+</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Spacing on the forms to make the form in the middle -->
+				</div>
+
+				<div class="col-6">
+
+					<form action="/action_page.php">
+						
+						
+						<!-- https://getbootstrap.com/docs/5.0/forms/layout/ -->
+						<div class="row g-3">
+							<h2>Message Us</h2>
+
+							<!-- https://getbootstrap.com/docs/5.0/layout/columns/ -->
+							<div class="col-md-2">
+								<select name ="title" class="form-control" id="title"><!--The select element lets you select a value amongst a set of options-->
+									<option value="" selected disabled hidden>Title</option>
+									<option value ="Mr" id="Mr"> Mr </option>
+									<option value ="Mrs" id="Mrs"> Mrs </option>
+									<option value ="Miss" id="Miss"> Miss </option>
+									<option value ="Dr" id="Dr"> Dr </option>
+								</select>
+							</div>
+
+							<div class="col-md-4"><!--Input is a typed data field. Place holder Puts a word as a place holder untill something is typed in the box-->
+								<input type ="text" class="form-control" placeholder="First Name" id="fname" required><!--Required is a form of vlaidation to promtp the user add requred informationin before proceeding-->
+							</div>
+
+							<div class="col-md-4">
+								<input type ="text" class="form-control" placeholder="Last Name" id="lname" required>
+							</div>
+
+
+								<div class="col-md-5">
+									<input type ="email" class="form-control" placeholder="Email" id="email" required>
+								</div>
+
+								<div class="col-md-5">
+									<input type ="number" class="form-control" placeholder="Phone Number" id="phone" required>
+								</div>
+
+								<div class="col-md-6">
+									<input type ="text" class="form-control" placeholder="Address" id="address" required>
+								</div>
+
+								<div class="col-md-5">
+									<input type ="text" class="form-control" placeholder="City" id="city" required>
+								</div>
+
+								<div class="mb-3">
+									<textarea class="form-control" placeholder="Message "id="message" rows="6"></textarea>
+								  </div>
+								
+								
+							</div>
+		
+						<hr>
+
+						<div class="box7" style="text-align: center;">
+
+							<input type="submit" class="btn btn-primary" value="Submit" >
+							<input type="reset" class="btn btn-light" value="Reset">
+						</div>
+					</form>
+				</div>
+				
+				<div class="col">
+				</div>
+			</div>
+		</div>
+		
+	
+
+<div class="google-maps">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.1372334317434!2d174.77402505087025!3d-41.284117648091936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd4d8cba683%3A0xa38fdcca4873c3fe!2s1%20Panama%20Street%2C%20Wellington%20Central%2C%20Wellington%206011!5e0!3m2!1sen!2snz!4v1649146064067!5m2!1sen!2snz"
+  ></iframe>
+</div>
+</div>
+
+<script src="../Footer/footer.js"></script><!--calls out a reference to footer java script-->
+
+
+</body>
+</html>
+
+
+
+
+
+
+

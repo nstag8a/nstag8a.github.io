@@ -1,0 +1,70 @@
+.myfooter {/*the formatting details for the footer where text is*/
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    
+  }
+  
+  .socialmedia {/*sets the dimensions and locations for the three social media buttons*/
+  background-color: white);
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    width: 60%;
+    padding: 5px 0px 10px;
+   }
+   
+
+  
+   .fa {
+    padding: 5px;
+    font-size: 17px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+}
+  
+  .fa:hover {
+    color: #12a8f3;
+  }
+  
+  .fa-facebook {/*states the colours for the button button*/
+    background: #000000;
+    color: white;
+  }
+  
+  .fa-instagram {/*states the colours for the instagram button*/
+    background: #000000;
+    color: white;
+  }
+  
+  .fa-twitter{/*states the colours for the twitter button*/
+    background: #000000;
+    color: white;
+  }
+  
+  
+  .p1 {
+      font-size: 15px;
+      color:black;
+  }
+  h1 {
+      font-size: 30;
+      color:black;
+      font-family: "Castellar";
+      text-align: center;
+  }
+  
+  h2 {
+      font-size: 15;
+      color:black;
+      font-family: "arial";
+      text-align: center;
+  
+  }

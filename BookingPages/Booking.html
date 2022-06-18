@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Link/ref to bootstrap for ui -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<!-- other link/ref to js and css -->
+		<link rel="stylesheet" href="bookingcss.css">
+		<script src="booking.js"></script>
+		<link rel="stylesheet" href="../Header/header.css">
+		<link rel="stylesheet" href="../Footer/footer.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Booking</title>
+	</head>
+		<body>
+			<!-- Header script -->
+			<script src="../Header/header.js"></script>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+						<!-- Spacing on the forms to make the form in the middle -->
+						</div>
+
+					<div class="col-6">
+
+						<form action="">
+							<h1>Booking Details</h1>
+							<!-- onchange - change value immediately -->
+							<select name="guests" class="form-select" id="guests" onchange="priceupdate()">
+								<!-- show a disable html option by default. Number of Guest will be shown in the
+								drop down menu, but user are not able to select the value -->
+								<option value="" selected disabled hidden>Number of Guests</option>
+								<option value="1" datprice="1" id="1adult">1 Adult</option>
+								<option value="2" datprice="2" id="2adult">2 Adults</option>
+								<option value="3" datprice="3" id="3adult">3 Adults</option>
+							</select>
+							
+							<div class="row">
+								<div class="col">
+									<h5>Check-in</h5>
+									<!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+									<input type="date" class="form-control" id="checkin" name="chkin" required>
+								</div>  
+								
+								<div class="col">
+									<h5>Check-out</h5>
+									<input type="date" class="form-control" id="checkout" name="ckout" required>
+								</div>
+								
+							</div>
+
+							<div class="box3">
+								<h5>Room Type</h5>
+
+								<select name="rooms" class="form-select" id="rooms" onchange="priceupdate()">
+									<option value="" selected disabled hidden>Room Types</option>
+									<option value="P" id="P" datprice="200">Promenade Suite</option>
+									<option value="D" id="D" datprice="500">Deluxe Suite</option>
+									<option value="PS"id="PS" datprice="800">President Suite</option>
+								</select>
+								<div id="price">Total: $0
+								</div>			
+							</div>
+
+							<hr>
+							<!-- https://getbootstrap.com/docs/5.0/forms/layout/ -->
+							<div class="row g-3">
+								<h2>Guest Information</h2>
+								<h5>Personal Information</h5>
+
+								<!-- https://getbootstrap.com/docs/5.0/layout/columns/ -->
+								<div class="col-md-2">
+									<select name ="title" class="form-select" id="title">
+										<option value="" selected disabled hidden>Title</option>
+										<option value ="Mr" id="Mr"> Mr </option>
+										<option value ="Mrs" id="Mrs"> Mrs </option>
+										<option value ="Miss" id="Miss"> Miss </option>
+										<option value ="Dr" id="Dr"> Dr </option>
+									</select>
+								</div>
+
+								<div class="col-md-4">
+									<input type ="text" class="form-control" placeholder="First Name" id="fname" required>
+								</div>
+
+								<div class="col-md-4">
+									<input type ="text" class="form-control" placeholder="Last Name" id="lname" required>
+								</div>
+
+
+									<div class="col-md-6">
+										<input type ="email" class="form-control" placeholder="Email" id="email" required>
+									</div>
+
+									<div class="col-md-5">
+										<input type ="number" class="form-control" placeholder="Phone Number" id="phone" required>
+									</div>
+
+
+									<div class="col-md-6">
+										<input type ="text" class="form-control" placeholder="Address" id="address" required>
+									</div>
+
+									<div class="col-md-5">
+										<input type ="text" class="form-control" placeholder="City" id="city" required>
+									</div>
+
+								</div>
+			
+							<hr>
+
+							<div class="box5">
+								<h2>Payment Details</h2>
+								<h5>Card Type</h5>
+
+								<!-- https://getbootstrap.com/docs/5.0/forms/checks-radios/ -->
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="visa" value="visa" required>
+									<label class="form-check-label" for="visa">Visa</label>
+								  </div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="master" value="master" required>
+									<label class="form-check-label" for="master">Master</label>
+								</div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" id="paypal" value="paypal" required>
+									<label class="form-check-label" for="paypal">Paypal</label>
+								</div>
+
+								<div class="row g-3">
+									<div class="col-md-5">
+										<input type ="text" class="form-control" placeholder="Name on Card" id="namecard" required>
+									</div>
+
+									<div class="col-md-6">
+										<input type ="text" class="form-control" placeholder="Card Number" id="cardnum" required>
+									</div>
+
+									<div class="col">
+										<input type ="month" class="form-control" placeholder="MM/YY" id="monthyear" required>
+									</div>
+
+									<div class="col">
+										<input type ="text" class="form-control" placeholder="CVV" id="cvv" required>
+									</div>
+
+								</div>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="terms" value="terms" required>
+								<label class="form-check-label" for="terms">I have read and agree to the Terms & 
+									Conditions and Privacy Policy</label>
+							  </div>
+
+							<div class="box7" style="text-align: center;">
+								<!-- When user select 'submit' the function 'submitValidate()' executes in JS -->
+								<input type="submit" class="btn btn-primary" value="Submit" onclick="submitValidate()">
+								<input type="reset" class="btn btn-light" value="Reset">
+							</div>
+						</form>
+					</div>
+					
+					<div class="col">
+						<!-- Spacing on the forms to make the form in the middle -->
+					</div>
+				</div>
+			</div>
+		    <script src="../Footer/footer.js"></script>
+		</body>
+</html>
